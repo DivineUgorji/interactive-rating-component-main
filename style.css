@@ -1,0 +1,252 @@
+:root {
+  --clr-primary: hsl(216, 12%, 8%);
+  --clr-accent: hsl(25, 97%, 53%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(217, 12%, 63%);
+  --clr-neutral-400: hsl(213, 19%, 18%);
+
+  --clr-star: hsla(217, 12%, 63%, 0.112);
+
+  --bg-gradient: linear-gradient(
+    to top,
+    hsl(215, 24%, 12%),
+    hsl(215, 20%, 17%)
+  );
+
+  --ff-regular: "Overpass", sans-serif;
+
+  --spacer: 1rem;
+  --form-input-size: 3.1875rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-regular);
+  background: var(--clr-primary);
+  color: var(--clr-neutral-200);
+  font-size: 0.9375rem;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+/* Utility classes */
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/* .container {
+  max-width: 25.75rem;
+  width: calc(100% - 3rem);
+  margin: 0 auto;
+  
+} */
+
+main {
+  max-width: 25.75rem;
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+}
+
+.card-wrapper {
+  border-radius: 1.825rem;
+}
+
+.secondary-heading {
+  color: var(--clr-neutral-100);
+  font-size: clamp(24px, 5.5vw, 28px);
+  line-height: 1.25;
+  margin-bottom: 0.9375rem;
+}
+
+.btn {
+  display: inline-block;
+  color: var(--clr-neutral-100);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-color: var(--clr-accent);
+  border: unset;
+  outline: none;
+  border-radius: 2.8125rem;
+  padding: 0.9375rem 8.625rem 0.6875rem 8.625rem;
+  width: 100%;
+}
+
+.btn:is(:hover) {
+  color: var(--clr-primary);
+  background-color: var(--clr-neutral-100);
+  transition: all 100ms ease-in;
+}
+
+/* General styles */
+
+.rating-card__front-wrapper {
+  background-image: var(--bg-gradient);
+  padding: 2rem;
+}
+
+.logo {
+  background-color: var(--clr-star);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  padding: 1rem;
+  margin-bottom: 1.875rem;
+}
+
+.rating-card--disabled {
+  display: none;
+}
+
+/* Form styles */
+
+fieldset {
+  border: none;
+}
+
+.radio-button .control {
+  --size: clamp(2.625rem, 10vw, 3.1875rem);
+}
+
+.radio-button .control {
+  --form-input-size: clamp(2.625rem, 10vw, 3.1875rem);
+
+  display: block;
+  color: var(--clr-neutral-200);
+  background-color: var(--clr-neutral-400);
+  font-size: 1rem;
+  font-weight: 700;
+  height: var(--form-input-size);
+  width: var(--form-input-size);
+  border-radius: var(--form-input-size);
+  text-align: center;
+  line-height: var(--form-input-size);
+  cursor: pointer;
+}
+
+.radio-button input:checked + .control {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-400);
+}
+
+.radio-button:hover .control {
+  background-color: var(--clr-accent);
+  color: var(--clr-neutral-400);
+  transition: all 300ms ease-in;
+}
+
+.form-input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 1.5rem 2rem;
+}
+
+.rating-card__back-wrapper {
+  background-image: var(--bg-gradient);
+  text-align: center;
+  padding: 2.8125rem 2.5rem 2.8125rem 2rem;
+}
+
+.rating-card__back-wrapper img {
+  margin-inline: auto;
+}
+
+.rating-text {
+  display: inline-block;
+  color: var(--clr-accent);
+  background-color: var(--clr-neutral-400);
+  padding: 0.25rem 1.25rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
+  margin-inline: auto;
+}
+
+.flip-animation {
+  transition: ease-in 0.5s;
+  animation: flip-card 0.5s ease;
+}
+
+@keyframes flip-card {
+  0% {
+    transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 1rem;
+}
+.attribution a {
+  color: var(--clr-neutral-100);
+}
