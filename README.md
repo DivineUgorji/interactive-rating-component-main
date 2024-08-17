@@ -1,13 +1,15 @@
 <div align = "center"> 
 <h1 align="center"> Frontend Mentor - Interactive rating component solution</h1>
 
-## This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
-
 <br>
 
 ![](design/desktop-preview.jpg)
 
+## This is my shot to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
+
 </div>
+
+<br>
 
 <div align="center">
 
