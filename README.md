@@ -1,13 +1,11 @@
 <div align = "center"> 
 <h1 align="center"> Frontend Mentor - Interactive rating component solution</h1>
 
-<h3>This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). </h3>
+## This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
 
 <br>
 
-<p>This is my shot at a free design resource made by Anima which I found online and used for the purpose of practise and self learning.</p>
-
-![](./screenshot.jpg)
+![](design/desktop-preview.jpg)
 
 </div>
 
@@ -38,7 +36,6 @@
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- CSS Stacking context
 - Mobile-first workflow
 - BEM Methodology
 - Javascript DOM API
@@ -48,7 +45,6 @@
 
 - Proper image sizing and control.
 - How to combine Flexbox and Grid to achieve responsive layouts.
-- More practise on CSS stacking context
 - Javascript DOM API
 - Javascript formData API
 
@@ -57,7 +53,7 @@
 - Divine Ugorji
 - Twitter [@DivineUgorji](https://www.twitter.com/DivineUgorji)
 
-- Frontend Mentor - [@DivineUgorji](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@DivineUgorji](https://www.frontendmentor.io/profile/DivineUgorji)
 
 ## References
 
